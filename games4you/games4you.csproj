@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+<PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <NoWarn>$(NoWarn);1591</NoWarn>
+</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../games4you.DataAccessLayer/games4you.DataAccessLayer.csproj" />
+    <ProjectReference Include="../games4you.ServiceLayer/games4you.ServiceLayer.csproj" />
+    <ProjectReference Include="../games4youDomain/games4youDomain.csproj" />
+  </ItemGroup>
+
+
+</Project>
